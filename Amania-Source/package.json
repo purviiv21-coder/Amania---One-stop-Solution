@@ -1,0 +1,33 @@
+{
+  "name": "amania-campus-hub",
+  "version": "1.0.0",
+  "private": true,
+  "main": "final_index.ts",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "build:android:release": "expo run:android --variant release",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "scan-server": "npm --prefix server run scan-server",
+    "build:apk": "npx eas-cli build --platform android --profile preview"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "expo": "~57.0.23",
+    "expo-clipboard": "~57.0.0",
+    "expo-image-picker": "~57.0.20",
+    "expo-notifications": "~57.0.22",
+    "expo-secure-store": "~57.0.4",
+    "expo-status-bar": "~57.0.1",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-safe-area-context": "~5.7.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.0",
+    "eslint": "^9.0.0",
+    "eslint-config-expo": "~57.0.2",
+    "typescript": "~5.9.2"
+  }
+}

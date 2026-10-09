@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "name": "Amania",
+    "slug": "amania-campus-hub",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "newArchEnabled": true,
+    "android": {
+      "package": "com.amania.campushub",
+      "permissions": ["POST_NOTIFICATIONS", "READ_MEDIA_IMAGES", "SCHEDULE_EXACT_ALARM"]
+    },
+    "plugins": [
+      ["expo-image-picker", { "photosPermission": "Amania uses your photos to read campus event posters.", "microphonePermission": false }],
+      ["expo-notifications", { "defaultChannel": "event-reminders" }]
+    ]
+  }
+}
